@@ -2,129 +2,212 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>The Best Pizza - Наші товари</title>
-    
+    <title>The Best Pizza — Варіант №10</title>
     <style>
-        body { font-family: sans-serif; margin: 20px; }
-        table { border-collapse: collapse; margin: 0 auto; text-align: center; }
-        th, td { border: 1px solid black; padding: 8px; }
-        /* Легка заливка для "цеглинок", щоб викладач чітко бачив структуру */
-        .brick { background-color: #ffdcb0; }
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        h1 {
+            margin: 28px 0 0 66px;
+            font-size: 20px;
+        }
+
+        table {
+            width: 660px;
+            height: auto;
+            margin: 20px 0 0 66px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption {
+            position: relative;
+            left: -4px;
+            padding: 0 0 1px;
+            text-align: left;
+            font-family: "Times New Roman", serif;
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        thead, tbody, tfoot { vertical-align: middle; }
+        tfoot { display: table-row-group; }
+
+        td, th {
+            border: 1px solid #000;
+            padding: 0 2px;
+            height: 21px;
+            line-height: 12px;
+            font-weight: normal;
+            overflow: hidden;
+        }
+
+        .r1 td, .r1 th, .r4 td, .r4 th, .r5 td, .r5 th,
+        .r7 td, .r7 th, .r9 td, .r9 th, .r10 td, .r10 th,
+        .r12 td, .r12 th { height: 22px; }
+        .head-dark { background: #eeeeee; font-weight: bold; }
+        .param-empty { background: #fff; }
+        .brick { background: #ffdcb0; }
+        .category {
+            background: #eeeeee;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        .category-label { display: inline-block; }
+        .pizza-name { font-size: 9px; font-weight: bold; white-space: nowrap; }
+        .ingredient { font-size: 8px; white-space: nowrap; }
+        .price { font-size: 9px; }
+        .summary-label { font-size: 8px; text-align: left; white-space: nowrap; }
+        .footer-note { font-size: 7.5px; white-space: nowrap; text-align: left; }
     </style>
 </head>
 <body>
-
-    <h1 style="text-align: center;">Асортимент "The Best Pizza"</h1>
-
-    <!-- 1. Тег <table> з атрибутами 10 варіанту: lang, width, bgcolor, summary -->
-    <table lang="uk" width="95%" bgcolor="#fdfdfd" summary="Таблиця асортименту та цін підприємства">
-        
-        <!-- 2. Тег <caption> з атрибутами: style, id -->
-        <caption style="font-weight: bold; font-size: 1.2em; padding: 10px;" id="table-cap">
-            Структурований прайс-лист (Варіант 10)
-        </caption>
-
-        <!-- 3. Тег <colgroup> з атрибутами: id, title -->
-        <colgroup id="col-group-main" title="Налаштування ширини">
-            <col style="width: 10%;"> <!-- Категорія -->
-            <col style="width: 15%;"> <!-- Назва -->
-            <col style="width: 20%;"> <!-- Склад -->
-            <!-- 8 колонок для цегляної кладки та 3 для цін (разом 11) -->
-            <col span="11"> 
+    <h1>Асортимент «The Best Pizza»</h1>
+    <table lang="uk" width="660" bgcolor="#fdfdfd" summary="Асортимент піц, складники та ціни — варіант 10">
+        <caption id="table-cap" style="caption-side: top;">Структурований прайс-лист — Варіант №10</caption>
+        <colgroup id="col-group-main" title="Ширина колонок таблиці">
+            <col style="width: 28px;">
+            <col style="width: 287px;">
+            <col style="width: 106px;">
+            <col style="width: 27px;">
+            <col style="width: 30px;">
+            <col style="width: 31px;">
+            <col style="width: 27px;">
+            <col style="width: 42px;">
+            <col style="width: 44px;">
+            <col style="width: 38px;">
         </colgroup>
-
         <thead>
-            <tr>
-                <!-- 4. Тег <th> з атрибутами: abbr, colspan, id, class -->
-                <th abbr="Кат" colspan="1" id="th-cat" class="head-dark">Категорія</th>
-                <th abbr="Назв" colspan="1" id="th-name" class="head-dark">Назва</th>
-                <th abbr="Склад" colspan="1" id="th-ing" class="head-dark">Склад</th>
-                <!-- Шапка над цегляною зоною -->
-                <th abbr="Парам" colspan="8" id="th-param" class="head-light">Параметри (Цегляна структура)</th>
-                <th abbr="Ціна M" colspan="1" id="th-pm" class="head-dark">Ціна M</th>
-                <th abbr="Ціна L" colspan="1" id="th-pl" class="head-dark">Ціна L</th>
-                <th abbr="Ціна XL" colspan="1" id="th-pxl" class="head-dark">Ціна XL</th>
+            <tr class="r1" lang="uk" char="." bgcolor="#ffffff" charoff="1">
+                <th id="cell-76" title="Варіант 10" lang="uk" dir="ltr" rowspan="2" abbr="Варіант" class="head-dark">&nbsp;</th>
+                <th id="cell-77" title="Асортимент піц" lang="uk" dir="ltr" colspan="6" abbr="Асортимент" class="head-dark">Асортимент «The Best Pizza»</th>
+                <th id="cell-78" title="Цінові колонки" lang="uk" dir="ltr" abbr="Ціни" class="head-dark">Ціни</th>
+                <th id="cell-79" title="Розмір піци" lang="uk" dir="ltr" colspan="2" abbr="Розмір" class="head-dark">Розмір</th>
+            </tr>
+            <tr class="r2" lang="uk" char="," bgcolor="#f9f9f9" charoff="1">
+                <th id="cell-80" title="Клітинка таблиці" lang="uk" dir="ltr" abbr="Назва" class="head-dark">Назва</th>
+                <th id="cell-81" title="Клітинка таблиці" lang="uk" dir="ltr" abbr="Склад" class="head-dark">Склад</th>
+                <td id="cell-82" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-83" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-84" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-85" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <th id="cell-86" title="Клітинка таблиці" lang="uk" dir="ltr" abbr="M" class="head-dark">M</th>
+                <th id="cell-87" title="Клітинка таблиці" lang="uk" dir="ltr" abbr="L" class="head-dark">L</th>
+                <th id="cell-88" title="Клітинка таблиці" lang="uk" dir="ltr" abbr="XL" class="head-dark">XL</th>
             </tr>
         </thead>
-
-        <!-- 5. Тег <tfoot> з атрибутами: valign, style, title 
-             (в методичці написано valing з помилкою, використовуємо правильний valign) -->
-        <tfoot valign="middle" style="font-style: italic; background-color: #eee;" title="Підвал таблиці">
-            <!-- 6. Тег <tr> з атрибутами: lang, char, bgcolor, charoff 
-                 (char і charoff - це дуже старі атрибути для вирівнювання по символу, але варіант їх вимагає) -->
-            <tr lang="uk" char="." bgcolor="#e0e0e0" charoff="2">
-                <!-- 7. Тег <td> з атрибутами: id, title, lang, dir -->
-                <td colspan="14" id="footer-text" title="Кінець" lang="uk" dir="ltr">Усі ціни вказані в гривнях. Доставка по Глибокій безкоштовна!</td>
+        <tbody>
+            <tr class="r3" lang="uk" char="." bgcolor="#ffffff" charoff="1">
+                <td id="cell-1" title="М'ясні піци" lang="uk" dir="ltr" rowspan="3" class="category"><span class="category-label">М'ясні<br>піци</span></td>
+                <td id="cell-2" title="Піца Баварська" lang="uk" dir="ltr" class="pizza-name">Баварська</td>
+                <td id="cell-3" title="Склад піци" lang="uk" dir="ltr" class="ingredient">Мисливські ковбаски, бекон</td>
+                <td id="cell-4" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="brick">&nbsp;</td>
+                <td id="cell-5" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-6" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-7" title="Ціна" lang="uk" dir="ltr" class="price">150</td>
+                <td id="cell-8" title="Ціна" lang="uk" dir="ltr" class="price">200</td>
+                <td id="cell-9" title="Ціна" lang="uk" dir="ltr" class="price">250</td>
+            </tr>
+            <tr class="r4" lang="uk" char="," bgcolor="#f9f9f9" charoff="1">
+                <td id="cell-10" title="Піца Діабло" lang="uk" dir="ltr" class="pizza-name">Діабло</td>
+                <td id="cell-11" title="Склад піци" lang="uk" dir="ltr" class="ingredient">Салямі, перець халапеньйо</td>
+                <td id="cell-12" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-13" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="brick">&nbsp;</td>
+                <td id="cell-14" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-15" title="Ціна" lang="uk" dir="ltr" class="price">160</td>
+                <td id="cell-16" title="Ціна" lang="uk" dir="ltr" class="price">210</td>
+                <td id="cell-17" title="Ціна" lang="uk" dir="ltr" class="price">270</td>
+            </tr>
+            <tr class="r5" lang="uk" char="." bgcolor="#ffffff" charoff="1">
+                <td id="cell-18" title="Піца Куряча" lang="uk" dir="ltr" class="pizza-name">Куряча</td>
+                <td id="cell-19" title="Склад піци" lang="uk" dir="ltr" class="ingredient">Курка, ананаси, сир</td>
+                <td id="cell-20" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-21" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-22" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="brick">&nbsp;</td>
+                <td id="cell-23" title="Ціна" lang="uk" dir="ltr" class="price">140</td>
+                <td id="cell-24" title="Ціна" lang="uk" dir="ltr" class="price">190</td>
+                <td id="cell-25" title="Ціна" lang="uk" dir="ltr" class="price">240</td>
+            </tr>
+            <tr class="r6" lang="uk" char="," bgcolor="#f9f9f9" charoff="1">
+                <td id="cell-26" title="Сирні піци" lang="uk" dir="ltr" rowspan="3" class="category"><span class="category-label">Сирні<br>піци</span></td>
+                <td id="cell-27" title="Піца Маргарита" lang="uk" dir="ltr" class="pizza-name">Маргарита</td>
+                <td id="cell-28" title="Склад піци" lang="uk" dir="ltr" class="ingredient">Моцарела, томати</td>
+                <td id="cell-29" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="brick">&nbsp;</td>
+                <td id="cell-30" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-31" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-32" title="Ціна" lang="uk" dir="ltr" class="price">120</td>
+                <td id="cell-33" title="Ціна" lang="uk" dir="ltr" class="price">170</td>
+                <td id="cell-34" title="Ціна" lang="uk" dir="ltr" class="price">220</td>
+            </tr>
+            <tr class="r7" lang="uk" char="." bgcolor="#ffffff" charoff="1">
+                <td id="cell-35" title="Піца 4 Сири" lang="uk" dir="ltr" class="pizza-name">4 Сири</td>
+                <td id="cell-36" title="Склад піци" lang="uk" dir="ltr" class="ingredient">Дор блю, пармезан, фета</td>
+                <td id="cell-37" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-38" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="brick">&nbsp;</td>
+                <td id="cell-39" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-40" title="Ціна" lang="uk" dir="ltr" class="price">180</td>
+                <td id="cell-41" title="Ціна" lang="uk" dir="ltr" class="price">230</td>
+                <td id="cell-42" title="Ціна" lang="uk" dir="ltr" class="price">280</td>
+            </tr>
+            <tr class="r8" lang="uk" char="," bgcolor="#f9f9f9" charoff="1">
+                <td id="cell-43" title="Піца Сирна курка" lang="uk" dir="ltr" class="pizza-name">Сирна курка</td>
+                <td id="cell-44" title="Склад піци" lang="uk" dir="ltr" class="ingredient">Курка, подвійний сир</td>
+                <td id="cell-45" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-46" title="Параметр піци" lang="uk" dir="ltr" class="brick">&nbsp;</td>
+                <td id="cell-47" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="brick">&nbsp;</td>
+                <td id="cell-48" title="Ціна" lang="uk" dir="ltr" class="price">160</td>
+                <td id="cell-49" title="Ціна" lang="uk" dir="ltr" class="price">210</td>
+                <td id="cell-50" title="Ціна" lang="uk" dir="ltr" class="price">260</td>
+            </tr>
+            <tr class="r9" lang="uk" char="." bgcolor="#ffffff" charoff="1">
+                <td id="cell-51" title="Підсумок" lang="uk" dir="ltr" rowspan="3" class="category"><span class="category-label">Підсу<br>мок</span></td>
+                <td id="cell-52" title="Клітинка таблиці" lang="uk" dir="ltr" class="summary-label">Сума цін позицій</td>
+                <td id="cell-53" title="Клітинка таблиці" lang="uk" dir="ltr" class="ingredient">&nbsp;</td>
+                <td id="cell-54" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="param-empty">&nbsp;</td>
+                <td id="cell-55" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-56" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-57" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">910</td>
+                <td id="cell-58" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">1210</td>
+                <td id="cell-59" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">1520</td>
+            </tr>
+            <tr class="r10" lang="uk" char="," bgcolor="#f9f9f9" charoff="1">
+                <td id="cell-60" title="Клітинка таблиці" lang="uk" dir="ltr" class="summary-label">Найнижча ціна — Маргарита (M)</td>
+                <td id="cell-61" title="Клітинка таблиці" lang="uk" dir="ltr" class="ingredient">&nbsp;</td>
+                <td id="cell-62" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-63" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="param-empty">&nbsp;</td>
+                <td id="cell-64" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-65" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">120</td>
+                <td id="cell-66" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">&nbsp;</td>
+                <td id="cell-67" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">&nbsp;</td>
+            </tr>
+            <tr class="r11" lang="uk" char="." bgcolor="#ffffff" charoff="1">
+                <td id="cell-68" title="Клітинка таблиці" lang="uk" dir="ltr" class="summary-label">Найвища ціна — 4 Сири (XL)</td>
+                <td id="cell-69" title="Клітинка таблиці" lang="uk" dir="ltr" class="ingredient">&nbsp;</td>
+                <td id="cell-70" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-71" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-72" title="Параметр піци" lang="uk" dir="ltr" colspan="2" class="param-empty">&nbsp;</td>
+                <td id="cell-73" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">&nbsp;</td>
+                <td id="cell-74" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">&nbsp;</td>
+                <td id="cell-75" title="Клітинка таблиці" lang="uk" dir="ltr" class="price">280</td>
+            </tr>
+        </tbody>
+        <tfoot valign="middle" style="font-style: italic; background-color: #eeeeee;" title="Примітка до прайс-листа">
+            <tr class="r12" lang="uk" char="." bgcolor="#e0e0e0" charoff="2">
+                <td id="cell-89" title="Клітинка таблиці" lang="uk" dir="ltr">&nbsp;</td>
+                <td id="cell-90" title="Інформація про ціни та доставку" lang="uk" dir="ltr" class="footer-note">Усі ціни вказані в гривнях. Доставка по Глибокій безкоштовна!</td>
+                <td id="cell-91" title="Клітинка таблиці" lang="uk" dir="ltr" class="ingredient">&nbsp;</td>
+                <td id="cell-92" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-93" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-94" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-95" title="Параметр піци" lang="uk" dir="ltr" class="param-empty">&nbsp;</td>
+                <td id="cell-96" title="Клітинка таблиці" lang="uk" dir="ltr">&nbsp;</td>
+                <td id="cell-97" title="Клітинка таблиці" lang="uk" dir="ltr">&nbsp;</td>
+                <td id="cell-98" title="Клітинка таблиці" lang="uk" dir="ltr">&nbsp;</td>
             </tr>
         </tfoot>
-
-        <tbody>
-            <!-- === БЛОК 1 (Перші 3 рядки з об'єднанням першої колонки) === -->
-            <tr lang="uk" char="." bgcolor="#ffffff" charoff="1">
-                <!-- Ось тут відбувається об'єднання 3 рядків для першої колонки -->
-                <td rowspan="3" id="td-c1" title="М'ясні піци" lang="uk" dir="ltr"><b>М'ясні піци</b></td>
-                
-                <td id="td-n1" title="Піца" lang="uk" dir="ltr">Баварська</td>
-                <td id="td-i1" title="Склад" lang="uk" dir="ltr">Мисливські ковбаски, бекон</td>
-                
-                <!-- Ряд 1 цегляної кладки: 4 комірки шириною 2 -->
-                <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td>
-                
-                <td id="td-p1-1" title="Ціна" lang="uk" dir="ltr">150</td>
-                <td id="td-p1-2" title="Ціна" lang="uk" dir="ltr">200</td>
-                <td id="td-p1-3" title="Ціна" lang="uk" dir="ltr">250</td>
-            </tr>
-            <tr lang="uk" char="," bgcolor="#f9f9f9" charoff="1">
-                <!-- Категорія пропущена через rowspan вище -->
-                <td id="td-n2" title="Піца" lang="uk" dir="ltr">Діабло</td>
-                <td id="td-i2" title="Склад" lang="uk" dir="ltr">Салямі, перець халапеньйо</td>
-                
-                <!-- Ряд 2 цегляної кладки (зсув): 1 + 2 + 2 + 2 + 1 -->
-                <td colspan="1" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="1" class="brick"></td>
-                
-                <td id="td-p2-1" title="Ціна" lang="uk" dir="ltr">160</td>
-                <td id="td-p2-2" title="Ціна" lang="uk" dir="ltr">210</td>
-                <td id="td-p2-3" title="Ціна" lang="uk" dir="ltr">270</td>
-            </tr>
-            <tr lang="uk" char="." bgcolor="#ffffff" charoff="1">
-                <td id="td-n3" title="Піца" lang="uk" dir="ltr">Куряча</td>
-                <td id="td-i3" title="Склад" lang="uk" dir="ltr">Курка, ананаси, сир</td>
-                
-                <!-- Ряд 3 цегляної кладки: знову 4 комірки шириною 2 -->
-                <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td>
-                
-                <td id="td-p3-1" title="Ціна" lang="uk" dir="ltr">140</td>
-                <td id="td-p3-2" title="Ціна" lang="uk" dir="ltr">190</td>
-                <td id="td-p3-3" title="Ціна" lang="uk" dir="ltr">240</td>
-            </tr>
-
-            <!-- === БЛОК 2 (Ще 3 рядки для повноти 12-рядної структури варіанту) === -->
-            <tr lang="uk" char="." bgcolor="#f0f0f0" charoff="1">
-                <td rowspan="3" id="td-c2" title="Сирні" lang="uk" dir="ltr"><b>Сирні</b></td>
-                <td id="td-n4" title="Піца" lang="uk" dir="ltr">Маргарита</td>
-                <td id="td-i4" title="Склад" lang="uk" dir="ltr">Моцарела, томати</td>
-                <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td>
-                <td id="td-p4-1" title="Ціна" lang="uk" dir="ltr">120</td> <td id="td-p4-2" title="Ціна" lang="uk" dir="ltr">170</td> <td id="td-p4-3" title="Ціна" lang="uk" dir="ltr">220</td>
-            </tr>
-            <tr lang="uk" char="," bgcolor="#ffffff" charoff="1">
-                <td id="td-n5" title="Піца" lang="uk" dir="ltr">4 Сири</td>
-                <td id="td-i5" title="Склад" lang="uk" dir="ltr">Дор блю, пармезан, фета</td>
-                <td colspan="1" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="1" class="brick"></td>
-                <td id="td-p5-1" title="Ціна" lang="uk" dir="ltr">180</td> <td id="td-p5-2" title="Ціна" lang="uk" dir="ltr">230</td> <td id="td-p5-3" title="Ціна" lang="uk" dir="ltr">280</td>
-            </tr>
-            <tr lang="uk" char="." bgcolor="#f0f0f0" charoff="1">
-                <td id="td-n6" title="Піца" lang="uk" dir="ltr">Сирна курка</td>
-                <td id="td-i6" title="Склад" lang="uk" dir="ltr">Курка, подвійний сир</td>
-                <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td> <td colspan="2" class="brick"></td>
-                <td id="td-p6-1" title="Ціна" lang="uk" dir="ltr">160</td> <td id="td-p6-2" title="Ціна" lang="uk" dir="ltr">210</td> <td id="td-p6-3" title="Ціна" lang="uk" dir="ltr">260</td>
-            </tr>
-            
-            <!-- Щоб не робити полотно коду, я зробив 6 рядків (2 блоки). 
-                 Структура повністю ідентична і повторює патерн. Для здачі лаби цього візуально цілком достатньо. 
-                 Якщо викладач придереться, що треба рівно 12 рядків, як на фото - просто скопіюй БЛОК 2 ще два рази, змінивши назви піц на напої. -->
-
-        </tbody>
     </table>
-
 </body>
 </html>
